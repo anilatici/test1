@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Canvas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div>
+        <canvas id="canvas">
+            Your browser does not support the HTML5 'Canvas' tag.
+        </canvas>
+    </div>
+    <input type="button" value="Brighten Image" onClick="brighten()">
+    <input type="button" value="Greyscale Image" onClick="greyscale()">
+    <input type="button" value="Sepia Image" onClick="sepia()">
+    <input type="button" value="Invert Image" onClick="invert()">
+    <input type="button" value="Posterise Image" onClick="posterise()">
+    <input type="button" value="Threshold Image" onClick="threshold()">
+    <input type="button" value="Convolut Image" onClick="convolutions()">
+    <br><b><i>Upload Image</i></b><br>
+    <input type="file" id="fileUpload">
+    <br><br><input type="button" value="Clean the Canvas" onClick="clearScreen()"><br>
+    <br><b><i>Backgrounds</i></b><br>
+    <input type="button" value="White Background" onClick="setBackgroundImage(image1)">
+    <input type="button" value="Grey Background" onClick="setBackgroundImage(image2)"><br>
+    <input type="button" value="Black Background" onClick="setBackgroundImage(image3)"><br>
+    <input type="button" value="Nature" onClick="setBackgroundImage(image4)"><br>
+    <div id="composites">
+        <br><b><i>Composites</i></b><br>
+        <input type="button" value="Source Atop" onClick="sourceAtop()"><br>
+        <input type="button" value="Source In" onClick="sourceIn()"><br>
+        <input type="button" value="Source Out" onClick="sourceOut()"><br>
+        <input type="button" value="Source Over" onClick="sourceOver()"><br>
+        <input type="button" value="Destination Atop" onClick="destinationAtop()"><br>
+        <input type="button" value="Destination In" onClick="destinationIn()"><br>
+        <input type="button" value="Destination Out" onClick="destinationOut()"><br>
+        <input type="button" value="Destination Over" onClick="destinationOver()"><br>
+        <input type="button" value="Lighter" onClick="lighter()"><br>
+        <input type="button" value="Darker" onClick="darker()"><br>
+        <input type="button" value="Xor" onClick="xor()"><br>
+        <input type="button" value="Copy" onClick="copy()"><br>
+    </div>
+    <br><b><i>Colours</i></b><br>
+    <input type="color" id="colourPicker" onchange="color(this.value)"><br>
+    <br><b><i>Brush Thickness</i></b><br>
+    <input type="range" id="brushThicknessSlider" min="1" max="100" value="5" onchange="radiusSize(this.value)"><br>
+    <a id="saveImageFile" download="image.png" onclick="this.href = canvas.toDataURL('image/png')">Save Image</a>
+    <script src="js1.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+            #canvas
+            {
+                border:1px solid black;
+                width:500px;
+                height:500px;
+            }
+
+
+            #loadingMessage
+            {
+                position:absolute;
+                top:100px;
+                left:100px;
+                z-index:100;
+                font-size:50px;
+            }
+
+            #saveImageFile
+            {
+                border:thin solid #aaa;
+                background-color:#e9e9e9;
+                padding:2px;
+                padding-left:7px;
+                padding-right: 7px;
+                color:black;
+                text-decoration: none;
+                font-family:Arial, sans-serif;
+                font-size:13px;
+                cursor:default;
+                background : -webkit-linear-gradient(top, #f9f9f9, #e0e0e0);
+                background : -moz-linear-gradient(top, #f9f9f9, #e0e0e0);
+                background : -ms-linear-gradient(top, #f9f9f9, #e0e0e0);
+                background : -o-linear-gradient(top, #f9f9f9, #e0e0e0) ;   
+                background : linear-gradient(top, #f9f9f9, #e0e0e0);
+            }
+
+            saveImageFile:active
+            {
+                background-color:#f0f0f0;
+                background : -webkit-linear-gradient(top, #e0e0e0, #f9f9f9);
+                background : -moz-linear-gradient(top, #e0e0e0, #f9f9f9);
+                background : -ms-linear-gradient(top, #e0e0e0, #f9f9f9);
+                background : -o-linear-gradient(top, #e0e0e0, #f9f9f9);  
+                background : linear-gradient(top, #e0e0e0, #f9f9f9);      
+            }
